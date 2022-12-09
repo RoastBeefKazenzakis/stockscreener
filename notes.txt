@@ -1,0 +1,21 @@
+Candidate modules:
+
+1. Numpy, obviously for crunching numbers
+2. Pyfolio for backtesting, portfolio development
+3. pandas_datareader.nasdaq_trader or yahoo finance API for raw data
+
+Objectives:
+
+First, get basic command line screener running.
+    a. Input symbol and receive relevant appraisal stats
+    b. Two algorithms:
+        i. Jimmy's Discounted cash flow appraisal
+        ii. Carlson's Value appraisal
+
+Next step, periodic queries of stock market as a whole searching for good candidates with those algorithms.
+
+UPDATE 12/8/22
+I discussed the idea of an automated screener grabbing metrics on every stock with a market cap over some threshold,
+idk like maybe like $1B, with Dave, and he recommended a good API:
+https://pypi.org/project/finpie/
+So I'm going to try importing that.
