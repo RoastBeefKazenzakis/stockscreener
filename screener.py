@@ -12,8 +12,9 @@
 
 
 from pandas_datareader import nasdaq_trader as nt
-import finpie as fp
+import finpie
 
+# old shit
 def printStock():
     var = input("Enter a stock symbol for more information: ")
     print("Printing information for ", var)
@@ -27,4 +28,12 @@ def printStockFinancials():
     stock = symbols.loc[var]
 
 def valueStockDFCF(stock):
+    print(stock)
+
+# new shit
+def printStockFinpie():
+    var = input("Enter a stock symbol for more information: ")
+    print("Printing information for ", var)
+    fd = finpie.Fundamentals(var, source = 'macrotrends', freq = 'A', countryCode="US")
+    stock = fd.profile()
     print(stock)
