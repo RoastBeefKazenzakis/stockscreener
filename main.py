@@ -1,3 +1,9 @@
 import screener
+import finpie
+import pandas
 
-screener.printStock()
+# list all symbols
+tickers = finpie.nasdaq_tickers()
+print(tickers)
+
+#screener.printStockFinpie()

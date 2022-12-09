@@ -18,4 +18,6 @@ UPDATE 12/8/22
 I discussed the idea of an automated screener grabbing metrics on every stock with a market cap over some threshold,
 idk like maybe like $1B, with Dave, and he recommended a good API:
 https://pypi.org/project/finpie/
-So I'm going to try importing that.
+So I'm going to try importing that. Done.
+
+Next is trying to collect more
