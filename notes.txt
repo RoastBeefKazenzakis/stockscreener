@@ -20,4 +20,8 @@ idk like maybe like $1B, with Dave, and he recommended a good API:
 https://pypi.org/project/finpie/
 So I'm going to try importing that. Done.
 
-Next is trying to collect more
+Next is trying to collect more data. Done.
+
+Current leave off: finpie API may have inconsistencies in data, when trying to use nasdaq_tickers() to use the Fundamentals
+lookups, the more obscure tickers will cause exceptions, "no data!" etc. Need to catch and discard these exceptions safely.
+Update: exceptions are caught but I think macrotrends is throttling me and throwing one of the errors I am catching
